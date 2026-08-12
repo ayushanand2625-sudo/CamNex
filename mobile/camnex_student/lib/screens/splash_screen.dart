@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
+import 'role_selection_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,11 +16,12 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Timer(const Duration(seconds: 1), () {
       Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const LoginScreen(),
-        ),
-      );
+  context,
+  MaterialPageRoute(
+    builder: (_) =>
+    const RoleSelectionScreen(),
+  ),
+);
     });
   }
 
